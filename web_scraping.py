@@ -31,7 +31,7 @@ current_time = now.strftime("%H:%M")
 
 driver.get('https://web.whatsapp.com/')
 driver.implicitly_wait(20)
-driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]').send_keys('Pappa')
+driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]').send_keys('Enter the contact name')
 driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]').send_keys(Keys.ENTER)
 driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys("The price of gold at " + current_time + ' is ' + str(price))
 driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(Keys.ENTER)
